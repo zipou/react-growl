@@ -5,15 +5,15 @@ Object.defineProperty(exports, "__esModule", {
 });
 exports.SUCCESS = exports.DANGER = exports.WARNING = exports.INFO = undefined;
 
-var _reducer = require("redux/reducer.js");
+var _reducer = require("./redux/reducer.js");
 
 var _reducer2 = _interopRequireDefault(_reducer);
 
-var _Notification = require("components/Notification.js");
+var _Notification = require("./components/Notification.js");
 
 var _Notification2 = _interopRequireDefault(_Notification);
 
-var _actions = require("redux/actions.js");
+var _actions = require("./redux/actions.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
