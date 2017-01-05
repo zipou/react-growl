@@ -1,6 +1,6 @@
 {
   "name": "box4b-react-growl",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Growl Like Notifications for box4b React Apps",
   "main": "build/index.js",
   "scripts": {
