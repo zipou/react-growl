@@ -1,6 +1,5 @@
 export const TIMEOUT_TYPE = "TIMEOUT_TYPE";
 export const NOTIFICATION_TYPE = "NOTIFICATION_TYPE";
-export const TIMEOUT = 1500;
 
 export const LOADING_START = "LOADING_START";
 export const LOADING_STOP = "LOADING_STOP";

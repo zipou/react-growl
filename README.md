@@ -63,5 +63,5 @@ Bugs
 Todo
 ----
 
-- Init Custom Options (like labels, ..)
+- Init Custom Options (like labels, TIMEOUT value ..)
 - Webpacking ?

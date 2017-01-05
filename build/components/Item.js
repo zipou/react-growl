@@ -11,6 +11,10 @@ var _react = require("react");
 
 var _react2 = _interopRequireDefault(_react);
 
+var _Notification = require("../static/Notification.scss");
+
+var _Notification2 = _interopRequireDefault(_Notification);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -47,7 +51,7 @@ var Item = function (_React$Component) {
           type = _props.type,
           visible = _props.visible;
 
-      var itemStyle = style[visible ? type : type + "_hidden"];
+      var itemStyle = _Notification2.default[visible ? type : type + "_hidden"];
       return _react2.default.createElement(
         "div",
         { className: itemStyle },
@@ -78,7 +82,7 @@ var LoadingItem = exports.LoadingItem = function (_React$Component2) {
           type = _props2.type,
           visible = _props2.visible;
 
-      var itemStyle = style[visible ? "loading" : "loading_hidden"];
+      var itemStyle = _Notification2.default[visible ? "loading" : "loading_hidden"];
       return _react2.default.createElement(
         "div",
         { className: itemStyle },
