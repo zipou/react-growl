@@ -1,7 +1,6 @@
 import {LOADING_START, LOADING_STOP, NOTIFICATION_TYPE, TIMEOUT_TYPE} from "./actions.js";
 
-
-export default notificationReducer = (state, action) => {
+export default (state, action) => {
   if (typeof state === 'undefined') {
     return {
       loading_counter: 0,
