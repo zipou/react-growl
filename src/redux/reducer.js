@@ -1,4 +1,4 @@
-import {LOADING_START, LOADING_STOP, NOTIFICATION_TYPE, TIMEOUT_TYPE} from "./actions";
+import {LOADING_START, LOADING_STOP, NOTIFICATION_TYPE, TIMEOUT_TYPE} from "./actions.js";
 
 
 export default notificationReducer = (state, action) => {

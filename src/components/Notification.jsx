@@ -2,7 +2,7 @@ import React from "react";
 import style from "../static/Notification.scss";
 import {connect} from "react-redux";
 import Item, {LoadingItem} from "./Item.jsx";
-import {timeoutAction} from "../redux/actions";
+import {timeoutAction} from "../redux/actions.js";
 
 const mapStateToProps = (state, ownProps) => {
   return {
