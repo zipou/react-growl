@@ -3,6 +3,7 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Notification = undefined;
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
@@ -44,16 +45,16 @@ var mapDispatchToProps = function mapDispatchToProps(dispatch, ownProps) {
   };
 };
 
-exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(function (_React$Component) {
-  _inherits(Notification, _React$Component);
+var Notification = exports.Notification = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(function (_React$Component) {
+  _inherits(_class, _React$Component);
 
-  function Notification() {
-    _classCallCheck(this, Notification);
+  function _class() {
+    _classCallCheck(this, _class);
 
-    return _possibleConstructorReturn(this, (Notification.__proto__ || Object.getPrototypeOf(Notification)).apply(this, arguments));
+    return _possibleConstructorReturn(this, (_class.__proto__ || Object.getPrototypeOf(_class)).apply(this, arguments));
   }
 
-  _createClass(Notification, [{
+  _createClass(_class, [{
     key: "render",
     value: function render() {
       var _this2 = this;
@@ -102,5 +103,5 @@ exports.default = (0, _reactRedux.connect)(mapStateToProps, mapDispatchToProps)(
     }
   }]);
 
-  return Notification;
+  return _class;
 }(_react2.default.Component));

@@ -3,29 +3,47 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
-exports.SUCCESS = exports.DANGER = exports.WARNING = exports.INFO = undefined;
 
 var _reducer = require("./redux/reducer.js");
 
-var _reducer2 = _interopRequireDefault(_reducer);
+Object.defineProperty(exports, "Reducer", {
+  enumerable: true,
+  get: function get() {
+    return _reducer.Reducer;
+  }
+});
 
 var _Notification = require("./components/Notification.js");
 
-var _Notification2 = _interopRequireDefault(_Notification);
+Object.defineProperty(exports, "Notification", {
+  enumerable: true,
+  get: function get() {
+    return _Notification.Notification;
+  }
+});
 
 var _actions = require("./redux/actions.js");
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
+Object.defineProperty(exports, "loadingStartAction", {
+  enumerable: true,
+  get: function get() {
+    return _actions.loadingStartAction;
+  }
+});
+Object.defineProperty(exports, "loadingStopAction", {
+  enumerable: true,
+  get: function get() {
+    return _actions.loadingStopAction;
+  }
+});
+Object.defineProperty(exports, "notify", {
+  enumerable: true,
+  get: function get() {
+    return _actions.notification;
+  }
+});
+var TIMEOUT = exports.TIMEOUT = 1500;
 var INFO = exports.INFO = "info";
 var WARNING = exports.WARNING = "warning";
 var DANGER = exports.DANGER = "danger";
 var SUCCESS = exports.SUCCESS = "success";
-
-exports.default = {
-  Reducer: _reducer2.default,
-  Notification: _Notification2.default,
-  loadingStartAction: _actions.loadingStartAction,
-  loadingStopAction: _actions.loadingStopAction,
-  notify: _actions.notification
-};

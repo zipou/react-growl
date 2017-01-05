@@ -3,10 +3,13 @@
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+exports.Reducer = undefined;
 
 var _actions = require("./actions.js");
 
-exports.default = function (state, action) {
+var _index = require("../index.js");
+
+var Reducer = exports.Reducer = function Reducer(state, action) {
   if (typeof state === 'undefined') {
     return {
       loading_counter: 0,
@@ -45,7 +48,7 @@ exports.default = function (state, action) {
         visible: true,
         type: type,
         message: message,
-        timeout: TIMEOUT
+        timeout: _index.TIMEOUT
       });
       return Object.assign({}, state, {
         notifications: notifications

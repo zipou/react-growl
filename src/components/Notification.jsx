@@ -18,7 +18,7 @@ const mapDispatchToProps = (dispatch, ownProps) => {
   }
 }
 
-export default connect(mapStateToProps, mapDispatchToProps)(class Notification extends React.Component {
+export const Notification = connect(mapStateToProps, mapDispatchToProps)(class extends React.Component {
 
   render() {
     let {notificationState} = this.props;

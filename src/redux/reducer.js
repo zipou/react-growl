@@ -1,7 +1,7 @@
 import {LOADING_START, LOADING_STOP, NOTIFICATION_TYPE, TIMEOUT_TYPE} from "./actions.js";
 import {TIMEOUT} from "../index.js";
 
-export default (state, action) => {
+export const Reducer = (state, action) => {
   if (typeof state === 'undefined') {
     return {
       loading_counter: 0,

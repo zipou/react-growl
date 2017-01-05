@@ -26,7 +26,7 @@ export const loadingStopAction = () => {
   }
 }
 
-const timeoutAction = (id) => {
+export const timeoutAction = (id) => {
   return {
     type : TIMEOUT_TYPE,
     data : id
