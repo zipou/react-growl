@@ -4,7 +4,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 
-var _actions = require("./actions");
+var _actions = require("./actions.js");
 
 exports.default = notificationReducer = function notificationReducer(state, action) {
   if (typeof state === 'undefined') {

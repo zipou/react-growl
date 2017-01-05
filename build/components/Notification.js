@@ -20,7 +20,7 @@ var _Item = require("./Item.js");
 
 var _Item2 = _interopRequireDefault(_Item);
 
-var _actions = require("../redux/actions");
+var _actions = require("../redux/actions.js");
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
