@@ -1,0 +1,95 @@
+.notification_banner {
+  position : fixed;
+  top: 0px;
+  right: 0px;
+  width: 290px;
+  height: 100vh;
+  padding:10px;
+  z-index: 100;
+  overflow: hidden;
+  -webkit-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -moz-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -ms-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -o-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+}
+
+.notification {
+  border-style:solid;
+  border-width: 2px;
+  border-radius: 10px;
+  margin-top:10px;
+  height: 80px;
+  padding: 15px;
+  -webkit-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -moz-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -ms-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+  -o-transition: visibility 0s 1500ms, opacity 1500ms ease-in-out, all 1500ms ease-out;
+}
+
+.danger {
+  background-color : #f2dede;
+  color : #a94442;
+  border-color: #ebccd1;
+  @extend .notification;
+}
+
+.warning {
+  background-color : #fcf8e3;
+  color : #8a6d3b;
+  border-color: #faebcc;
+  @extend .notification;
+}
+
+.success {
+  background-color : #dff0d8;
+  border-color: #d6e9c6;
+  color : #3c763d;
+  @extend .notification;
+}
+
+.info {
+  background-color :#d9edf7;
+  border-color: #bce8f1;
+  color : #31708f;
+  @extend .notification;
+}
+
+.info_hidden {
+  @extend .hidden;
+  @extend .info;
+}
+
+.warning_hidden {
+  @extend .hidden;
+  @extend .warning;
+}
+
+.danger_hidden {
+  @extend .hidden;
+  @extend .danger;
+}
+
+.success_hidden {
+  @extend .hidden;
+  @extend .success;
+}
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.loading_hidden{
+  // position: absolute;
+  // display: flex;
+  // left: 300px;
+  @extend .hidden;
+  @extend .info;
+}
+
+.loading {
+  // position: absolute;
+  // display: flex;
+  // left:0px;
+  @extend .info;
+}
