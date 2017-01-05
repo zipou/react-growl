@@ -1,5 +1,5 @@
 import Reducer from "redux/reducer";
-import Notification from "components/Notification.jsx";
+import Notification from "components/Notification";
 import {loadingStartAction, loadingStopAction, notification as notify} from "redux/actions";
 
 export const INFO = "info";

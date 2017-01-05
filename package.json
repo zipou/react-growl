@@ -1,10 +1,10 @@
 {
   "name": "box4b-react-growl",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Growl Like Notifications for box4b React Apps",
   "main": "build/index.js",
   "scripts": {
-    "build": "./node_modules/babel-cli/bin/babel.js src --out-file build/index.js",
+    "build": "./node_modules/babel-cli/bin/babel.js src --out-dir build/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublish": "npm run build"
   },
