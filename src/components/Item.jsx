@@ -1,4 +1,5 @@
 import React from "react";
+import style from "../static/Notification.scss";
 
 export default class Item extends React.Component {
 

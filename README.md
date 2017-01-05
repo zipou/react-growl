@@ -54,6 +54,12 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 
 ```
 
+Bugs
+----
+
+- Seems that `import { ... } from "box4b_react_growl"` does not work. I must have misused export/import on `src/index.js`
+
+
 Todo
 ----
 
